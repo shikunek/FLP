@@ -1,0 +1,33 @@
+% Název projektu: Rubikova kostka
+% Login: xpolan07
+% Autor: Petr Polanský
+
+Pro prohledani stavoveho prostoru jsem pouzil algoritmus BFS s frontou CLOSED.
+
+Metodu jsem modifikoval tak, ze overuji, zda nebyl nalezen cilovy stav jiz 
+po vygenerovani novych stavu, aplikovanim pohybu na aktualni stav.
+
+V projektu jsem definoval jen 6 zakladnich pohybu, proto nektere testy trvaji dele.
+
+Cestu reseni jsem zhotovil tak, ze jsem si ke kazdemu stavu ukladal jeho predchudce, 
+nasledne jsem od konecneho stavu postupoval zpetne a ulozil si stavy do seznamu a vypsal.
+
+Pouzil jsem dve dynamicke predikaty zprac_state, ktere nahrazuji frontu CLOSED a k_zpracovani, 
+ktere nahrazuji frontu OPEN.
+
+
+Testovaci soubor 		Cas vypoctu cca
+
+test1					 1s
+
+test2					 3s
+
+test3					 18s
+
+test4					 4s
+
+test5					 3s
+
+test6					 28s
+
+test7					 35s

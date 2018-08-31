@@ -1,0 +1,34 @@
+Nazev projektu: PLG-2-NKA
+Jmeno: Petr Polansky
+Login: xpolan07
+
+Soubory: plg-2-nka.hs - hlavni soubor
+		 Gram.hs - zpracovani gramatiky
+		 KonAut.hs - zpracovani konecneho automatu
+
+
+
+Pri standardnim vstupu program cte radky az do prazdneho radku.
+
+Nijak jsem neosetroval, pokud by byla linearni gramatika zadana ve spatnem tvaru,
+nebo ze byly pouzity jine znaky nez povolene.
+
+Toto by se dalo udelat prochazenim ulozenych pravidel jako retezce a overovat,
+zda se v nich vyskytuji jine znaku nez velka a mala pismena abecedy, cislice 
+nebo znak #.
+
+V pripade odstraneni jednoduchych pravidel, pokud tim vznikne pravidlo, 
+ktere jiz existuje, tak je ponechavam duplicitni.
+
+Nejsou ale vypisovany duplicitni koncove stavy u konecneho automatu.
+
+Seznam neterminalu je vypisovan z pravidel. Pokud tedy neni spravne zadan seznam neterminalu,
+program stejne vypise jej vypise spravne, podle toho, jestli neterminal je soucasti pravidel.
+
+Pokud tedy nejsou zadana zadna pravidla, tak se nevypise seznam neterminalu.
+
+Pokud jsou zadane pouze jednoducha pravidla, tak vysledny vypis konecneho automatu bude prazdny.
+
+Pri vypisu ze souboru jsou osetreny i odstraneny prazdne radky, pokud se nekde vyskytuji.
+
+Funkce getFirst, getSecond a getThird, jsem nestihl osetrit proti prazdnemu seznamu na vstupu.
